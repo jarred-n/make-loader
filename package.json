@@ -1,0 +1,27 @@
+{
+  "name": "make-loader",
+  "version": "1.0.0",
+  "description": "my first loader",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarred-n/make-loader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jarred-n/make-loader/issues"
+  },
+  "homepage": "https://github.com/jarred-n/make-loader#readme",
+  "dependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "loader-utils": "^1.2.3"
+  }
+}
