@@ -5,13 +5,22 @@ module.exports = {
     entry: {
         main: "./src/index.js"
     },
+    resolveLoader: {
+        // 查找resolve loder目录
+        modules: ['node_modules', './loaders']
+    },
     module: {
         rules: [{
             test: /\.js/,
-            use: [{
-                loader: path.resolve(__dirname, './loaders/replaceLoader.js'),
-                options: {name: 'lee'}
-            }]
+            use: [
+                {
+                    loader: 'replaceLoaderAsync',
+                },
+                {
+                    loader: 'replaceLoader',
+                    options: {name: 'lee'}
+                }
+            ]
         }]
     },
     output: {
